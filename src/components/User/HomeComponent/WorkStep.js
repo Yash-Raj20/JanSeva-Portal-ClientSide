@@ -1,5 +1,11 @@
 import React from "react";
-import { FaRegEdit, FaUsersCog, FaBroom, FaCheckCircle, FaCommentDots } from "react-icons/fa";
+import {
+  FaRegEdit,
+  FaUsersCog,
+  FaBroom,
+  FaCheckCircle,
+  FaCommentDots,
+} from "react-icons/fa";
 
 const steps = [
   {
@@ -29,15 +35,17 @@ const steps = [
   },
 ];
 
-export default function WorkStep () {
+export default function WorkStep() {
   return (
     <section className="py-16 bg-[#f3f9f6] px-4 sm:px-6 lg:px-16 text-center">
-      <h2 className="text-2xl sm:text-3xl font-bold text-[#0C2218]">How It Works</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold text-[#0C2218]">
+        How It Works
+      </h2>
       <img
-          src="./Logo/signature.svg"
-          alt="Underline"
-          className="mx-auto mb-14 h-6 w-32 object-contain"
-        />
+        src="./Logo/signature.svg"
+        alt="Underline"
+        className="mx-auto mb-14 h-6 w-32 object-contain"
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
         {steps.map((step, idx) => (
           <div key={idx} className="flex flex-col items-center text-center">
@@ -47,6 +55,13 @@ export default function WorkStep () {
           </div>
         ))}
       </div>
+      <div className="mt-12 md:mt-14 lg:mt-16">
+        <div>
+          <button className="uppercase border-2 border-[#FFE26A] px-6 py-3 text-[#0C2218] text-sm font-semibold bg-[#FFE26A] hover:bg-[#0C2218] hover:text-white transition-all">
+            Get Started Today
+          </button>
+        </div>
+      </div>
     </section>
   );
-};
+}

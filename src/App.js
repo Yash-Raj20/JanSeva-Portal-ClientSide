@@ -16,7 +16,6 @@ import Register from "./pages/User/AuthPage/Register";
 import SubmitProblem from "./pages/User/ProblemPage/SubmitProblem";
 import AllProblems from "./pages/User/ProblemPage/AllProblems";
 import ProblemDetails from "./pages/User/ProblemPage/ProblemDetails";
-import AllCommunity from "./pages/Community/DashboardPages/AllCommunity";
 
 // Protected User Dashboard Pages
 import Dashboard from "./pages/User/UserDashboardPage/Dashboard";
@@ -61,7 +60,6 @@ function App() {
           <Route path="/submit" element={<SubmitProblem />} />
           <Route path="/all-problems" element={<AllProblems />} />
           <Route path="/problems/:id" element={<ProblemDetails />} />
-          <Route path="/all-community" element={<AllCommunity />} />
           <Route path="/unauthorized" element={<Unauthorized />} />
 
           <Route element={<ProtectedRoute />}>

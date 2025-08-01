@@ -32,17 +32,17 @@ function TopUpvotedProblems({ problems }) {
       />
 
       {topProblems.length === 0 ? (
-        <p className="text-gray-500">No top voted problems yet.</p>
+        <p className="text-gray-500 max-w-5xl mx-auto text-center">No top voted problems yet.</p>
       ) : (
         <div>
           <div
             ref={scrollContainerRef}
-            className="max-w-[85rem] mx-auto flex gap-4 overflow-hidden pb-4"
+            className="max-w-[90rem] mx-auto flex gap-4 overflow-hidden pb-4"
           >
             {topProblems.map((problem) => (
               <div
                 key={problem._id}
-                className="flex-shrink-0 w-4/5 sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3"
+                className="flex-shrink-0 w-4/5 sm:w-1/1 md:w-1/2 lg:w-1/4 xl:w-1/4"
               >
                 <ProblemCard problem={problem} />
               </div>
