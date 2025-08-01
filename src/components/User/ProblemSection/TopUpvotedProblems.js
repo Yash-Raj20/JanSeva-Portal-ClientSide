@@ -37,7 +37,7 @@ function TopUpvotedProblems({ problems }) {
         <div>
           <div
             ref={scrollContainerRef}
-            className="max-w-[90rem] mx-auto flex gap-4 overflow-hidden pb-4"
+            className="max-w-[80rem] mx-auto flex gap-4 overflow-hidden pb-4"
           >
             {topProblems.map((problem) => (
               <div
